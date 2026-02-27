@@ -1,0 +1,10 @@
+[project]
+name = "apex-node-01"
+version = "0.1.0"
+description = "Apex Node 01"
+requires-python = ">=3.9"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
