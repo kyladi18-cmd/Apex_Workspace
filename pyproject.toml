@@ -5,6 +5,17 @@ description = "Apex Node 01"
 requires-python = ">=3.9"
 dependencies = []
 
+[project.scripts]
+apex-node-01 = "apex_node_01:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["apex_node_01"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
